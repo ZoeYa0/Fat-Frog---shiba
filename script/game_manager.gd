@@ -1,9 +1,7 @@
 extends Node
 
-var score =0
-@onready var scorelabel: Label = $scorelabel
-
-func add_point():
-	score += 1
-	scorelabel.text = "You earned " + str(score) + " coins!"
+	
+func _input(event):
+	if event.is_action_pressed("restart"):
+		get_tree().reload_current_scene()
 	

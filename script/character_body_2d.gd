@@ -1,51 +1,74 @@
 extends CharacterBody2D
 
 
-const SPEED = 4000.0
-const JUMP_VELOCITY = -500.0
+const SPEED = 192
+const JUMP_VELOCITY = -450.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+var state = "normal"
+var canpress = true
+var cooldown_time = 0.2
 
 
+func _process(delta: float) -> void:
+	if not canpress:
+		cooldown_time -= delta
+		if cooldown_time <= 0:
+			canpress = true
+			cooldown_time = 0.3
+	$"../FattyFly2".next_level_animation.connect($".".next_level_animation)
+	#omg this works signaler_node.signal_name.connect(receiver_node.method_name)
 
+	
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
-	# Handle jump.
-	#if Input.is_action_just_pressed("jump") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
+	else:
+		velocity.y = 0# don't fly
 		
+	if state == "normal":
+		
+		
+		# Get the input direction and handle the movement/deceleration.
+		var direction := Input.get_axis("left", "right")
+			
+		if direction and is_on_floor() and canpress:
+			velocity.y = JUMP_VELOCITY
+			velocity.x = direction * SPEED
+			$jumpSFX.play()
+			canpress = false
+		elif is_on_floor():
+			velocity.x = move_toward(velocity.x, 0, SPEED) #move from a to b by c
 
-	# Get the input direction and handle the movement/deceleration.
-	var direction := Input.get_axis("left", "right")
-	
-	if direction > 0:
-		animated_sprite_2d.flip_h = false
-	elif direction<0:
-		animated_sprite_2d.flip_h = true
-	
-	#play animations
-	if is_on_floor():
-		if direction==0:
+		move_and_slide()
+		
+		#play animations
+		if direction > 0:
+			animated_sprite_2d.flip_h = false
+		elif direction<0:
+			animated_sprite_2d.flip_h = true
+		if is_on_floor():
+		
 			animated_sprite_2d.play("idle")
 		else:
-			animated_sprite_2d.play("run")
-	else:
-		animated_sprite_2d.play("jump")
+			animated_sprite_2d.play("jump")
 	
-		
-		
-	if direction and is_on_floor():
-		Engine.time_scale = 0.3
-		velocity.x = direction * SPEED
-		velocity.y = JUMP_VELOCITY
-		
-		while not is_on_floor():
-			velocity.x = direction * SPEED
-			
-		Engine.time_scale = 1
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED) #speed is glide.
 
-	move_and_slide()
+func next_level_animation(next_level_file):
+	state = "exit"
+	animated_sprite_2d.play("next_level")
+	
+	await animated_sprite_2d.animation_finished
+	animated_sprite_2d.scale = Vector2(0.05,0.05)
+	$explosion.play()
+	#disable coll
+	velocity.y = 400
+	set_collision_mask_value(1, false)
+	collision_shape_2d.set_deferred("disabled", true)
+	
+	await get_tree().physics_frame
+	get_tree().change_scene_to_file(next_level_file)
+	# --- break floor snapping so it can fall ---
+	  # small downward push so is_on_floor() becomes false next frame
+	#print("player signal sent")
+	

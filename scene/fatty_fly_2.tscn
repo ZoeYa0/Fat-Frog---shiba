@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfnat4muf82y2"]
+
+[ext_resource type="Script" uid="uid://dt60kbs2hly15" path="res://script/fatty_fly.gd" id="1_t64s6"]
+[ext_resource type="Texture2D" uid="uid://b6uopijhpceg8" path="res://image0.png" id="2_t64s6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxplk"]
+size = Vector2(167.091, 168.091)
+
+[node name="FattyFly2" type="Area2D"]
+scale = Vector2(0.055, 0.055)
+collision_mask = 2
+script = ExtResource("1_t64s6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_t64s6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gxplk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
