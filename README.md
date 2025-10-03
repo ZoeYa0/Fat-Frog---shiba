@@ -8,25 +8,7 @@
 [![MIT License][license-shield]][license-url]
 
 <!-- HEADER -->
-<br />
-<div align="center">
-    <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
-        <img src="https://cloud-bo1ln2br1-hack-club-bot.vercel.app/0godotwaka22.png"  alt="Godot Wakatime"/>
-    </a>
-    <h3 align="center"> Godot Super Wakatime </h3>
-    <p align="center">
-        Tool to measure time spent in loved by many people game engine - Godot
-        <br />
-        Officially approved to use in High Seas event created by Hack Club
-        <br />
-        <br />
-        <a href="https://godotengine.org/asset-library/asset/3484">Get from Asset Lib</a>
-        ·
-        <a href="https://youtu.be/rqAc-YdVXyM">View Demo</a>
-        ·
-        <a href="https://github.com/BudzioT/Godot_Super-Wakatime/issues/new">Report Bug / Request Feature</a>
-    </p>
-</div>
+
 
 <!-- CONTENTS -->
 <details>
@@ -56,7 +38,10 @@
 <br />
 
 2025 Oct 3
-Hii!! This is my github page for my godot game Fatty Frog. Fatty Frog is my first game and was originally made for the YSWS program Shiba. It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons(up, left, right) compared to many other platformers. So it's easier to get stuck and requires more brainpower to play. I made it by following a tutorial and then branching out with my own ideas by following more tutorials😅😅. I've also added some of my own assets(The tileset looks horrible). The game is still in development but expect new mechanics !!! :D
+Hii!! This is my github page for my godot game Fatty Frog. Fatty Frog is my first game and was originally made for the YSWS program Shiba. It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons(up, left, right) compared to many other platformers. I wanted to experiment with two-key movement and while making it more puzzel-like than the usual platformers, like Knight Errant. I made it by following Brackey's beginner tutorial and then branching out with my own ideas by following more tutorials😅. I've also added some of my own assets(The tileset looks horrible). The game is still in development but expect new mechanics !!! :D
+
+Lore:
+You are Fatty Frog, the leader of the army(group of frogs), admired for your large size. However, after a lengthy winter slumber, you awoke to find that you are no longer overweight. Soooo venture out and consume enough Fatty Flies to regain your esteemed status!
 
 Struggles: 
 -enemy movement and code
@@ -66,23 +51,8 @@ Struggles:
 -how to come up with an original idea
 
 Result: And now I now how to do these things lol
-[![Product Screenshot][product-screenshot]](https://waka.hackclub.com)
 
-This tool can successfully measure time spent building your games or apps in Godot.
-<br />
-Here's why:
-* It differentiates between switching a scene and script
-* It counts key presses as coding and mouse clicks as building scene
-* Changing scene structure results in a heartbeat sent
-* It correctly detects OS, machine name, language, editor, files
-* It can detect your cursor line and position
-* Time is split between: Building, Coding, Testing
-* In the future it will also detect testing your projects
-
-It works on both Linux and Windows, it wasn't tested on macOS yet
-<br />
-You can also see your time spent in the editor itself:
-[![Time in editor][time-screenshot]]
+play here: https://zoeyao.itch.io/fatty-frog
 
 <p align="right">(<a href="#readme-top">top</a>)</p>
 
