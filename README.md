@@ -43,11 +43,16 @@ Hii!! This is my github page for my godot game Fatty Frog. Fatty Frog is my firs
 Lore:
 You are Fatty Frog, the leader of the army(group of frogs), admired for your large size. However, after a lengthy winter slumber, you awoke to find that you are no longer overweight. Soooo venture out and consume enough Fatty Flies to regain your esteemed status!
 
+
 Struggles: 
 -enemy movement and code
+
 -spawning enemies(yeah it's not here yet)
+
 -how do you receive signals
--how to make a good level that's challenging but is impossible for player to get permanately stuck
+
+-how to make a good level that's challenging but is impossible for player to get permanently stuck
+
 -how to come up with an original idea
 
 Result: And now I now how to do these things lol
