@@ -49,11 +49,12 @@
     </ol>
 </details>
 
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme
 
 <!-- ABOUT -->
 ## About The Project
 <br />
-[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 2025 Oct 3
 Hii!! This is my github page for my godot game Fatty Frog. Fatty Frog is my first game and was originally made for the YSWS program Shiba. It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons(up, left, right) compared to many other platformers. So it's easier to get stuck and requires more brainpower to play. I made it by following a tutorial and then branching out with my own ideas by following more tutorials😅😅. I've also added some of my own assets(The tileset looks horrible). The game is still in development but expect new mechanics !!! :D
 
