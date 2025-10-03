@@ -8,7 +8,11 @@ const JUMP_VELOCITY = -450.0
 var state = "normal"
 var canpress = true
 var cooldown_time = 0.2
+@onready var FattyFly2 = get_node_or_null("../FattyFly2")
 
+func _ready() -> void:
+	FattyFly2.next_level_animation.connect($".".animation)
+	#omg this works signaler_node.signal_name.connect(receiver_node.method_name)
 
 func _process(delta: float) -> void:
 	if not canpress:
@@ -16,8 +20,6 @@ func _process(delta: float) -> void:
 		if cooldown_time <= 0:
 			canpress = true
 			cooldown_time = 0.3
-	$"../FattyFly2".next_level_animation.connect($".".next_level_animation)
-	#omg this works signaler_node.signal_name.connect(receiver_node.method_name)
 
 	
 func _physics_process(delta: float) -> void:
@@ -54,7 +56,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite_2d.play("jump")
 	
 
-func next_level_animation(next_level_file):
+func animation(next_level_file):
 	state = "exit"
 	animated_sprite_2d.play("next_level")
 	
