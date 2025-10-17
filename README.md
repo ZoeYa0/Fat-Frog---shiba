@@ -9,36 +9,16 @@
 
 <!-- HEADER -->
 
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 
 <!-- CONTENTS -->
-<details>
-    <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#about">About The Project</a>
-            <ul>
-                <li><a href="#built-with">Built Using</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#getting-started">Getting Started</a>
-            <ul>
-                <li><a href="#installation">Installation</a></li>
-            </ul>
-        </li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#license">License</a></li>
-    </ol>
-</details>
 
-[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme
 
 <!-- ABOUT -->
 ## About The Project
 <br />
-
 2025 Oct 3
-Hii!! This is my github page for my godot game Fatty Frog. Fatty Frog is my first game and was originally made for the YSWS program Shiba. It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons(up, left, right) compared to many other platformers. I wanted to experiment with two-key movement and while making it more puzzel-like than the usual platformers, like Knight Errant. I made it by following Brackey's beginner tutorial and then branching out with my own ideas by following more tutorials😅. I've also added some of my own assets(The tileset looks horrible). The game is still in development but expect new mechanics !!! :D
+Hi! This is my README for my godot game Fatty Frog. Fatty Frog is my first game and was made for the YSWS program Shiba. It's a 2D puzzle platformer game where you jump left and right instead of having 3 buttons(up, left, right) compared to many other platformers. I wanted to experiment with two-key movement and while making it more puzzel-like than the usual platformers, like Knight Errant. I made it by following Brackey's beginner tutorial and then branching out with my own ideas by following more tutorials😅. I've also added some of my own assets(The tileset looks horrible). The game is still in development but expect new mechanics !!! :D
 
 Lore:
 You are Fatty Frog, the leader of the army(group of frogs), admired for your large size. However, after a lengthy winter slumber, you awoke to find that you are no longer overweight. Soooo venture out and consume enough Fatty Flies to regain your esteemed status!
