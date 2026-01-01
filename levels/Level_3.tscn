@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://dbodahqdwhvdj" path="res://scene/bird.tscn" id="12_udcvd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_knst5"]
-load_path = "res://.godot/imported/tileset.png-1629e48b8231bc5961972a5213d12b60.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sycs3"]
 texture = SubResource("CompressedTexture2D_knst5")
